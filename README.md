@@ -32,6 +32,12 @@ get more control over what we can change, to better conceal how our browsers are
 being driven; we will want to move from binary patches, to source code patches
 and compiling from source. 
 
+For more information, I recommend reviewing: 
+
+  * [WebDriver v2 Documentation](https://www.selenium.dev/documentation/webdriver/browsers/)
+  * [Supported Browsers](https://www.selenium.dev/documentation/webdriver/browsers/)
+
+
 ## Long Term
 It may feel like an endless cat-n-mouse game, but the truth is, the goal is just
 to get close enough to a "normal" browser that to block our browsers would
