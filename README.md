@@ -38,28 +38,53 @@ For more information, I recommend reviewing:
   * [Supported Browsers](https://www.selenium.dev/documentation/webdriver/browsers/)
 
 
-## Long Term
-It may feel like an endless cat-n-mouse game, but the truth is, the goal is just
-to get close enough to a "normal" browser that to block our browsers would
+## Development
+This is an open, transparent, and ideally a community project. Anyone is welcome
+to create issues, or submit pull requests.
+
+All pull requests will be taken seriously, and you will not be dismissed or
+condescended to.
+
+More details on development are located in the hidden file ".DEVELOPMENT.md". 
+
+### Short Term 
+Improve the binary patch functionality and get very basic web "crawler" to run
+basic tests. 
+
+Then leverage ideally **"rod"**, or **"colly"**; both are existing well 
+developed, high-level crawlers.
+
+It is important to hand off this functionality at least for now so we can focus
+on what makes this software unique: evading detection of automated browsing.
+
+At the last step, behavior-based concealment of browser automation, this can be
+re-evaluated; determining if it is suitable for our requirements and is using
+methods which effectively let us hide close enough to actual browser users that
+it becomes too difficult to de-tangle our browser automation from actual usage.
+
+### Long Term
+It may feel like an endless *Cat-N-Mouse Game*, but the truth is, the goal is
+just to get close enough to a "normal" browser that to block our browsers would
 require blocking normal users. This is not an endless arm-race, there is a point
 where if we modify the browser and our interaction with it, that hide among the
-crowd, in the same way Tor uses TLS to hide among normal web traffic. 
+crowd, in the same way Tor uses **TLS** to hide among normal web traffic.
 
-After we develop realistic fingerprint generation, concealing
-developer/automation tools, the last step will be behavior based on how the
-input is provided explicitly to the JavaScript tools used to identify "normal". 
+After generating realistic randomized fingerprints, concealing developer or 
+automation tools, the last step will be behavior based on how the input is 
+provided explicitly to the JavaScript tools used to identify "normal".
 
 A transparent proxy to block specific connections, file types, and cache locally
 common JavaScript, CSS, and other assets will let us obtain further performance
 improvements while giving us another layer which we can modify incoming and
 outgoing traffic, giving us a second front which we can use to conceal our
-automation. 
+automation.
 
 ## My Goal
-I'm working on a tool to improve upon the great browser extension "captcha
-buster"; using local ML tools like OpenCV to solve recaptcha, OCR to solve many
-image+text based captchas, and introduce solutions for the other new captchas
-which would not be difficult to automate. But this requires getting this project
-up to the behavior based tactics. 
+I'm working on a tool to improve upon the great browser extension "Captcha
+Buster"; using local ML tools like **OpenCV** to solve **ReCaptcha**, **OCR** 
+to solve many **Image+Text Captchas**, and introduce solutions for the other 
+new captchas which would not be difficult to automate.
+
+But this requires getting this project up to the behavior based tactics. 
 
 
