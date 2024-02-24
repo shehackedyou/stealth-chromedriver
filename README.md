@@ -87,4 +87,8 @@ new captchas which would not be difficult to automate.
 
 But this requires getting this project up to the behavior based tactics. 
 
+## License 
+This project like all projects on this account is GPLv3 unless explicitly stated
+otherwise. 
+
 
